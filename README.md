@@ -69,4 +69,4 @@ os.environ['PAGE_RANDOM'] = json.dumps([2, 3, 5, 9, 12])
 
 ## Spaced-repetition system (SRS)
 
-If you are looking extending the app with SRS, you might try, [srs-sqlite](https://github.com/patarapolw/srs-sqlite), which I currently use.
+If you are looking into extending the app with SRS, you might try, [srs-sqlite](https://github.com/patarapolw/srs-sqlite), which I currently use.
