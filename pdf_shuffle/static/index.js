@@ -119,7 +119,6 @@ function renderPage(resetStep){
   pdfCache.getPage(config.current)
     .then(page=>{
       const canvas = document.getElementById('pdf-area');
-      const container = document.getElementById('pdf-container');
       const context = canvas.getContext('2d');
       const viewport = page.getViewport(SCALING);
       const trueHeight = parseInt(getTrueWindowDimension().height);
@@ -156,6 +155,10 @@ function renderPage(resetStep){
       page.render({canvasContext: context, viewport: viewport});
 
       document.getElementById('page-label-current').innerHTML = config.current;
+      Object.assign(document.getElementById('pdf-container'), {
+        scrollTop: 0,
+        scrollLeft: 0
+      });
       setPageNav();
     });
 }
