@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  min-width: 100%;
+}
+
+#nav-area {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: inline-table;
+  width: 100%;
+}
+
+/* Style the buttons that are used to open the tab content */
+#new-record, .page-button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  margin: 0px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.page-button:disabled {
+  color: white;
+}
+
+#nav-page-button, #nav-page-button > *, #page-label > * {
+  display: inherit;
+}
+
+#page-label > * {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#pdf-container {
+  position: relative;
+  overflow: scroll;
+}
+
+#pdf-area {
+  position: absolute;
+  height: auto;
+  width: 100%;
+}

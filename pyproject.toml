@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pdf-shuffle"
+version = "0.1.0"
+description = "A PDF page/image randomizer, or flashcard quiz from a PDF."
+authors = ["patarapolw <patarapolw@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["pdf", "flashcard"]
+repository = "https://github.com/patarapolw/pdf-shuffle"
+homepage = "https://github.com/patarapolw/pdf-shuffle"
+
+[tool.poetry.dependencies]
+python = "*"
+flask = "^1.0"
+click = "^6.7"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pdf-shuffle = 'pdf_shuffle.__main__:pdf_shuffle'
+pdf-quiz = 'pdf_shuffle.__main__:pdf_quiz'

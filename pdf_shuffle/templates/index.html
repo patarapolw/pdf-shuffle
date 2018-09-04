@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.ico') }}"/> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
+
+  <title id="title"></title>
+</head>
+<body>
+  <div id="nav-area">
+    <div id="nav-page-button">
+      <button id="previous-all" class="page-button" disabled>&lt;&lt;</button>
+      <button id="previous" class="page-button" disabled>&lt;</button>
+      <div id="page-label">
+        <div id="page-label-current">0</div>
+        <div id="page-label-of">of</div>
+        <div id="page-label-total">0</div>
+      </div>
+      <button id="next" class="page-button" disabled>&gt;</button>
+      <button id="next-all" class="page-button" disabled>&gt;&gt;</button>
+    </div>
+  </div>
+
+  <div id="pdf-container">
+    <canvas id="pdf-area"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.550/pdf.min.js"></script>
+
+  <script>var config = {{ config|tojson }};</script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
