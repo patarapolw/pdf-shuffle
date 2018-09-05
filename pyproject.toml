@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pdf-shuffle"
-version = "0.1.1"
+version = "0.1.2"
 description = "A PDF page/image randomizer, or flashcard quiz from a PDF."
 authors = ["patarapolw <patarapolw@gmail.com>"]
 license = "MIT"

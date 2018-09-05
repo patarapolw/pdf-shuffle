@@ -1,5 +1,8 @@
 # pdf-shuffle
 
+[![PyPI version shields.io](https://img.shields.io/pypi/v/pdf_shuffle.svg)](https://pypi.python.org/pypi/pdf_shuffle/)
+[![PyPI license](https://img.shields.io/pypi/l/pdf_shuffle.svg)](https://pypi.python.org/pypi/pdf_shuffle/)
+
 A PDF page/image randomizer, or flashcard quiz from a PDF.
 
 ## Installation

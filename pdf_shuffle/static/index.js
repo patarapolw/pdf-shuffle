@@ -25,7 +25,7 @@ document.getElementById('previous-all').onclick = ()=>{
 }
 
 document.getElementById('previous').onclick = ()=>{
-  config.current -= config.step;
+  config.current --;
   renderPage();
 }
 
@@ -35,7 +35,7 @@ document.getElementById('next-all').onclick = ()=>{
 }
 
 document.getElementById('next').onclick = ()=>{
-  config.current += config.step;
+  config.current ++;
   renderPage();
 }
 
