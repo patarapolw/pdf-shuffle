@@ -3,7 +3,7 @@
 [![PyPI version shields.io](https://img.shields.io/pypi/v/pdf_shuffle.svg)](https://pypi.python.org/pypi/pdf_shuffle/)
 [![PyPI license](https://img.shields.io/pypi/l/pdf_shuffle.svg)](https://pypi.python.org/pypi/pdf_shuffle/)
 
-A PDF page/image randomizer, or flashcard quiz from a PDF.
+A PDF page/image randomizer, or flashcard quiz from a PDF. Or randomize files from a folder.
 
 ## Installation
 
@@ -59,6 +59,13 @@ Or,
 ```python
 from pdf_shuffle import init_quiz
 init_quiz('quiz.pdf')
+```
+
+You can also random files in a folder:
+
+```python
+from pdf_shuffle import init
+init('test/')
 ```
 
 ## Advanced usage

@@ -48,3 +48,7 @@ body {
   height: auto;
   width: 100%;
 }
+
+#pdf-area:focus {
+  outline: none;
+}

@@ -2,8 +2,10 @@ from flask import render_template, send_file, request
 import os
 import json
 from urllib.parse import unquote
+import random
 
 from . import app
+from .util import list_pdf
 
 
 @app.route('/')
@@ -19,4 +21,11 @@ def index():
 
 @app.route('/file')
 def send_pdf():
-    return send_file(os.path.abspath(unquote(request.args.get('filename'))))
+    filename = os.path.abspath(unquote(request.args.get('filename')))
+    cache_timeout = None
+    if os.path.isdir(filename):
+        filename = random.choice(tuple(list_pdf(filename)))
+        print(filename)
+        cache_timeout = 0
+
+    return send_file(filename, cache_timeout=cache_timeout)
