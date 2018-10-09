@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pdf-shuffle"
-version = "0.2.0"
+version = "0.2.1"
 description = "A PDF page/image randomizer, or flashcard quiz from a PDF."
 authors = ["patarapolw <patarapolw@gmail.com>"]
 license = "MIT"
@@ -12,7 +12,7 @@ homepage = "https://github.com/patarapolw/pdf-shuffle"
 [tool.poetry.dependencies]
 python = "*"
 flask = "^1.0"
-click = "^6.7"
+click = "^7.0"
 
 [tool.poetry.dev-dependencies]
 
